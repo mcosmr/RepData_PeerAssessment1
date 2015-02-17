@@ -2,6 +2,9 @@
 mcosmr  
 Tuesday, February 10, 2015  
 #Peer Assessment 1
+
+opts_chunk$set(fig.keep = "all", fig.show = "asis")
+
 ## PART 1
 
 ```r
