@@ -3,7 +3,6 @@ mcosmr
 Tuesday, February 10, 2015  
 #Peer Assessment 1
 
-opts_chunk$set(fig.keep = "all", fig.show = "asis")
 
 ## PART 1
 
@@ -28,7 +27,7 @@ Total_steps <- aggregate(steps ~ date, data = activity_data, na.rm =TRUE, sum)
 hist(Total_steps$steps, xlab = "Total Steps", main = "Steps each day")
 ```
 
-![](peer_assesment1_files/figure-html/hist-1.png) 
+![](figure/hist1-1.png) 
 
 ```r
 dev.copy(png,filename="Rplot1.png")
