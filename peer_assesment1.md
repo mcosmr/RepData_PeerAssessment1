@@ -25,7 +25,7 @@ Total_steps <- aggregate(steps ~ date, data = activity_data, na.rm =TRUE, sum)
 hist(Total_steps$steps, xlab = "Total Steps", main = "Steps each day")
 ```
 
-![](peer_assesment1_files/figure-html/unnamed-chunk-3-1.png) 
+![](peer_assesment1_files/figure-html/hist-1.png) 
 
 ```r
 dev.copy(png,filename="Rplot1.png")
@@ -78,7 +78,7 @@ time_series <- aggregate(steps ~ interval, data = activity_data, na.rm =TRUE, me
 plot(time_series$interval, time_series$steps, type = "l", xlab = "Interval", ylab = "Average Steps")
 ```
 
-![](peer_assesment1_files/figure-html/unnamed-chunk-5-1.png) 
+![](peer_assesment1_files/figure-html/unnamed-chunk-4-1.png) 
 
 ```r
 dev.copy(png,filename="Rplot2.png")
@@ -148,7 +148,7 @@ Total_steps2 <- aggregate(steps ~ date, data = data2, sum)
 hist(Total_steps2$steps, xlab = "Total Steps", main = "Steps each day")
 ```
 
-![](peer_assesment1_files/figure-html/unnamed-chunk-9-1.png) 
+![](peer_assesment1_files/figure-html/unnamed-chunk-8-1.png) 
 
 ```r
 dev.copy(png,filename="Rplot3.png")
@@ -183,7 +183,7 @@ hist(Total_steps$steps, xlab = "Total Steps", main ="NA removed")
 hist(Total_steps2$steps, xlab = "Total Steps ", main = "NA Filled in")
 ```
 
-![](peer_assesment1_files/figure-html/unnamed-chunk-10-1.png) 
+![](peer_assesment1_files/figure-html/unnamed-chunk-9-1.png) 
 
 ```r
 dev.copy(png,filename="Rplot4.png")
@@ -245,7 +245,7 @@ library(ggplot2)
 qplot(interval, steps, data = serie_weekday, geom = "line", facets = week_day~.)
 ```
 
-![](peer_assesment1_files/figure-html/unnamed-chunk-13-1.png) 
+![](peer_assesment1_files/figure-html/unnamed-chunk-12-1.png) 
 
 ```r
 dev.copy(png,filename="Rplot5.png")
